@@ -49,13 +49,15 @@
             transform: scale(1.2);
             opacity: 0;
             transition: all 350ms ease;
-        } .back-img:active {
-            transform: scale(.9)!important;
+        }
+
+        .back-img:active {
+            transform: scale(.9) !important;
         }
 
         .coins {
             width: fit-content;
-			min-width: 90px;
+            min-width: 90px;
             padding: .5vh 2vw;
             background-color: white;
             box-shadow: 0px 0px 4px #0000004d;
@@ -71,7 +73,7 @@
 
         .coins-img {
             width: 30px;
-			height: 30px;
+            height: 30px;
         }
 
         #coins {
@@ -91,6 +93,7 @@
             transform: scale(1.2);
             opacity: 0;
             transition: all 350ms ease;
+            overflow-y: scroll;
         }
 
         .active:active {
@@ -112,7 +115,7 @@
         .ct {
             width: 90%;
             max-width: 600px;
-            margin-top: 5vh;
+            margin-top: 15px;
             padding: 10px 0;
             background: #d3f36b;
             border-radius: 10px;
@@ -126,7 +129,7 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            font-size: xx-large;
+            font-size: x-large;
         }
 
         .hint-img {
@@ -157,7 +160,7 @@
         }
     </style>
     <div class="bottom">
-        <div class="ct ct1" style="display:none;">
+        <div class="ct ct1">
             <div class="ct-sub-bg">
                 <img src="res/image/coins.webp" class="hint-img"> + 5
             </div>
@@ -194,15 +197,32 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                display: none;
+                margin-top: 30px;
             }
+
             .divider-bar {
                 width: 20%;
                 height: 1px;
                 background-color: #24282c;
             }
+
             .divider-ct {
                 margin: 0 10px;
+            }
+
+            .app-img {
+                width: 50px;
+                margin-left: 10px;
+            }
+
+            .app-name {
+                width: 40%;
+                font-size: medium;
+                text-align: center;
+            }
+            .empty {
+                width: 100vw;
+                height: 40px;
             }
         </style>
         <div class="divider-bg">
@@ -210,6 +230,44 @@
             <div class="divider-ct">More apps</div>
             <div class="divider-bar"></div>
         </div>
+        <div class="ct">
+            <img src="res/image/app/eng.png" class="app-img">
+            <div class="app-name">Guess English Songs</div>
+            <div class="buy active">
+                <div class="buy-ct"
+                    onclick='parent.location=`https://play.google.com/store/apps/details?id=com.quec.english`'>
+                    Install</div>
+            </div>
+        </div>
+        <div class="ct">
+            <img src="res/image/app/anime.png" class="app-img">
+            <div class="app-name">Guess Anime</div>
+            <div class="buy active">
+                <div class="buy-ct"
+                    onclick='parent.location=`https://play.google.com/store/apps/details?id=com.quec.anime.guess`'>
+                    Install</div>
+            </div>
+        </div>
+        <div class="ct">
+            <img src="res/image/app/malayalam.png" class="app-img">
+            <div class="app-name">Guess Malayalam Movie</div>
+            <div class="buy active">
+                <div class="buy-ct"
+                    onclick='parent.location=`https://play.google.com/store/apps/details?id=com.quec.guess.malayalam`'>
+                    Install</div>
+            </div>
+        </div>
+        <div class="ct">
+            <img src="res/image/app/tamil.png" class="app-img">
+            <div class="app-name">Guess Tamil Movie</div>
+            <div class="buy active">
+                <div class="buy-ct"
+                    onclick='parent.location=`https://play.google.com/store/apps/details?id=com.quec.guess.tamil`'>
+                    Install</div>
+            </div>
+        </div>
+        <div class="empty"></div>
+
 
     </div>
 
