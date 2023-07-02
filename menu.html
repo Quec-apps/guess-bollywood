@@ -137,6 +137,13 @@
 			left: 2%;
 		}
 
+		.ct-main-img2 {
+			width: 228px;
+			position: absolute;
+			top: -40%;
+			left: 46%;
+		}
+
 		.ct-img {
 			width: 30vw;
 			height: 30vw;
@@ -274,6 +281,12 @@
 			<div class="score"><span id="bollyLevels">0</span></div>
 		</div>
 
+		<div class="ct ct2">
+			<img src="res/image/arij.webp" class="ct-main-img2">
+			<div class="ct-txt">SONGS</div>
+			<div class="score"><span id="song-level">0</span></div>
+		</div>
+
 		<style>
 			.rate-bg {
 				width: 85vw;
@@ -301,6 +314,7 @@
 	</div><!--ct-bg closed-->
 	<audio id="button2" src="res/audio/button2.mp3"></audio>
 	<script src="movie/movie.js"></script>
+	<script src="song/res/song.js"></script>
 	<script>
 		setTimeout(function () { $('.coffee-img, .coins, .feedback, .special-bg, .luffy-img').css({ opacity: '1' }); }, 200);
 		setTimeout(function () { $('.ct1').css({ 'transform': 'scale(1)', 'opacity': '1' }); }, 100);
@@ -350,17 +364,35 @@
 			setTimeout(() => { parent.location = "get_coins.html"; }, 700);
 		});
 
-		var levels = parseInt(localStorage.getItem("bollyLevels"));
 		if (localStorage.getItem("bollyLevels") === null) {
 			levels = 1;
-			document.getElementById("bollyLevels").innerHTML = "1";
 			parseInt(localStorage.setItem("bollyLevels", levels));
-		} else { document.getElementById("bollyLevels").innerHTML = levels; }
+		}
+		levels = parseInt(localStorage.getItem("bollyLevels"));
+		$("#bollyLevels").text(levels);
+
+		if (localStorage.getItem("bollySongLevel") === null) {
+			bollySongLevel = 1;
+			parseInt(localStorage.setItem("bollySongLevel", bollySongLevel));
+		}
+		bollySongLevel = parseInt(localStorage.getItem("bollySongLevel"));
+		$("#song-level").text(bollySongLevel);
 
 		$('.ct1').click(function () {
 			if (levels <= levelTotal) {
 				setTimeout(function () {
 					parent.location = 'movie/movie.html';
+				}, 600);
+			} else {
+				setTimeout(function () {
+					parent.location = 'wait_update.html';
+				}, 600);
+			}
+		});
+		$('.ct2').click(function () {
+			if (bollySongLevel <= songLevelTotal) {
+				setTimeout(function () {
+					parent.location = 'song/song_content.html';
 				}, 600);
 			} else {
 				setTimeout(function () {
