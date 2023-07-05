@@ -144,6 +144,13 @@
 			left: 46%;
 		}
 
+		.ct-main-img3 {
+			width: 158px;
+			position: absolute;
+			top: -2%;
+			left: 54%;
+		}
+
 		.ct-img {
 			width: 30vw;
 			height: 30vw;
@@ -276,9 +283,15 @@
 
 	<div class="ct-bg">
 		<div class="ct ct1">
-			<img src="res/image/shar2.webp" class="ct-main-img">
+			<img src="res/image/dir.webp" class="ct-main-img3">
 			<div class="ct-txt">MOVIE</div>
 			<div class="score"><span id="bollyLevels">0</span></div>
+		</div>
+
+		<div class="ct ct3">
+			<img src="res/image/shar2.webp" class="ct-main-img">
+			<div class="ct-txt">ACTOR</div>
+			<div class="score"><span id="bollyActorLevel">0</span></div>
 		</div>
 
 		<div class="ct ct2">
@@ -378,6 +391,22 @@
 		bollySongLevel = parseInt(localStorage.getItem("bollySongLevel"));
 		$("#song-level").text(bollySongLevel);
 
+		if (localStorage.bollyActorLevel == null) {
+			bollyActorLevel = 1;
+			localStorage.bollyActorLevel = bollyActorLevel;
+		}
+		bollyActorLevel = parseInt(localStorage.bollyActorLevel);
+		console.log(bollyActorLevel)
+		$("#bollyActorLevel").html(bollyActorLevel);
+
+		if (localStorage.bollyActressLevel == null) {
+			bollyActressLevel = 1;
+			localStorage.bollyActressLevel = bollyActressLevel;
+		}
+		bollyActressLevel = parseInt(localStorage.bollyActressLevel);
+		console.log(bollyActressLevel)
+		$("#bollyActressLevel").html(bollyActressLevel);
+
 		$('.ct1').click(function () {
 			if (levels <= levelTotal) {
 				setTimeout(function () {
@@ -393,6 +422,17 @@
 			if (bollySongLevel <= songLevelTotal) {
 				setTimeout(function () {
 					parent.location = 'song/song_content.html';
+				}, 600);
+			} else {
+				setTimeout(function () {
+					parent.location = 'wait_update.html';
+				}, 600);
+			}
+		});
+		$('.ct3').click(function () {
+			if (bollyActorLevel <= songLevelTotal) {
+				setTimeout(function () {
+					parent.location = 'actor/actor_content.html';
 				}, 600);
 			} else {
 				setTimeout(function () {
