@@ -225,7 +225,7 @@ window["q4"+b] = "Sun Raha Hai Na Tu";
 window["li"+b] = ' https://youtu.be/cyhT9yq7TEo';
 
 b++;
-window["q"+b] = "Kabira Encore"; //Ans29
+window["q"+b] = "Kabira"; //Ans29
 window["q1"+b] = "Mast Magan";
 window["q2"+b] = "Dil Ko Karrar Aaya";
 window["q3"+b] = "Naino Ne Baandhi";
@@ -265,7 +265,7 @@ window["q4"+b] = "Pasoori Nu";
 window["li"+b] = ' https://youtu.be/AOj65YUeYX0';
 
 b++;
-window["q"+b] = "kahani suno 2.0"; //Ans34
+window["q"+b] = "kahani suno"; //Ans34
 window["q1"+b] = "Photo";
 window["q2"+b] = "'AGAR TUM SAATH HO";
 window["q3"+b] = "MATARGASHTI";
@@ -313,7 +313,7 @@ window["q4"+b] = "Thoda Thoda Pyaar";
 window["li"+b] = ' https://youtu.be/7VppHj0Rue0';
 
 b++;
-window["q"+b] = "Shah Rukh Khan"; //Ans40
+window["q"+b] = "Gerua"; //Ans40
 window["q1"+b] = "Manike";
 window["q2"+b] = "Sau Aasmaan";
 window["q3"+b] = "Main Rang Sharbaton Ka";
@@ -348,7 +348,7 @@ b++;
 window["q"+b] = "Mercy"; //Ans44
 window["q1"+b] = "Badri Ki Dulhania";
 window["q2"+b] = "Humsafar";
-window["q3"+b] = "Shah Rukh Khan";
+window["q3"+b] = "Gerua";
 window["q4"+b] = "Kyaa Baat Haii 2.0";
 window["li"+b] = ' https://youtu.be/Jyst8oIHOAY';
 
@@ -506,7 +506,7 @@ window["li"+b] = ' https://youtu.be/ylW9gdva7Oo';
 
 b++;
 window["q"+b] = "Jehda Nasha"; //Ans64
-window["q1"+b] = "Shah Rukh Khan";
+window["q1"+b] = "Gerua";
 window["q2"+b] = "Lut Gaye";
 window["q3"+b] = "Cham Cham";
 window["q4"+b] = "Main Tera Hero";
