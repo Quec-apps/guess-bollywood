@@ -249,12 +249,12 @@ window["q4"+b] = "Photo";
 window["li"+b] = ' https://youtu.be/UVnvb5LUXRk';
 
 b++;
-window["q"+b] = "Tum Kya Mile"; //Ans32
-window["q1"+b] = "Tujh Mein Rab Dikhta Hai";
-window["q2"+b] = "Pal";
-window["q3"+b] = "Main Rang Sharbaton Ka";
-window["q4"+b] = "Nadiyon Paar";
-window["li"+b] = ' https://youtu.be/taRBVfDRukY';
+window["q"+b] = "Naino Ne Baandhi"; //Ans32
+window["q1"+b] = "Main Hoon Saath Tere";
+window["q2"+b] = "'AGAR TUM SAATH HO";
+window["q3"+b] = "Sun Saathiya";
+window["q4"+b] = "Bolna";
+window["li"+b] = ' https://youtu.be/Y9ozt29tzgs';
 
 b++;
 window["q"+b] = "O Bedardeya"; //Ans33
@@ -791,14 +791,6 @@ window["q2"+b] = "Param Sundari";
 window["q3"+b] = "Bheegi Si Bhaagi Si";
 window["q4"+b] = "Abhi Mujh Mein Kahin";
 window["li"+b] = ' https://youtu.be/bwTnn4-ZuH0';
-
-b++;
-window["q"+b] = "Naino Ne Baandhi"; //Ans100
-window["q1"+b] = "Main Hoon Saath Tere";
-window["q2"+b] = "'AGAR TUM SAATH HO";
-window["q3"+b] = "Sun Saathiya";
-window["q4"+b] = "Bolna";
-window["li"+b] = ' https://youtu.be/Y9ozt29tzgs';
 
 
 songLevelTotal = b;
